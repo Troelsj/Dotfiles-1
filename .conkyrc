@@ -1,0 +1,24 @@
+background        	no
+out_to_console	yes
+out_to_x		no
+update_interval	0.5
+total_run_time	0
+short_units	      	yes
+pad_percents	    	3
+max_text_width 	0
+if_up_strictness 	address
+override_utf8_locale no
+
+use_xft 		yes
+
+
+TEXT
+[
+{"full_text": "${exec ~/scripts/music.sh}"},
+{"full_text": "${exec ~/scripts/dropbox.sh}"},
+{"full_text": "${exec ~/scripts/wifi.sh}"},
+{"full_text": "${exec ~/scripts/brightness.sh}"},
+{"full_text": "${exec ~/scripts/volume.sh}"},
+{"full_text": "${exec perl ~/scripts/battery.sh}"},
+{"full_text": "  ${time %b %d}    ${time %H:%M}"}
+],
